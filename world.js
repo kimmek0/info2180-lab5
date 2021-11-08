@@ -14,9 +14,9 @@ onload= function(){
     btn2.addEventListener('click',function(event){
         event.preventDefault();
         var url="world.php?country="+country.value+"&context=cities";
-        httpRequest.onreadystatechange=hrequest;
-        httpRequest.open('GET',url,true);
-        httpRequest.send(); 
+        request.onreadystatechange=hrequest;
+        request.open('GET',url,true);
+        request.send(); 
     });
 
     function hrequest(){
