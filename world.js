@@ -1,5 +1,6 @@
 onload= function(){
     var btn=document.getElementById('lookup');
+    var btn2=document.getElementById('lookup2')
     var request=new XMLHttpRequest();
     var result=document.getElementById('result');
     var country=document.getElementById('country');
@@ -9,6 +10,13 @@ onload= function(){
         request.onreadystatechange=hrequest;
         request.open('GET',url,true);
         request.send(); 
+    })
+    btn2.addEventListener('click',function(event){
+        event.preventDefault();
+        var url="world.php?country="+country.value+"&context=cities";
+        httpRequest.onreadystatechange=hrequest;
+        httpRequest.open('GET',url,true);
+        httpRequest.send(); 
     });
 
     function hrequest(){
