@@ -20,7 +20,7 @@ body{
     margin:0;
     font-size:20px;
     font-weight: 700;
-    background-color: #f7f1f1;
+    background-color: ghostwhite;
 }
 main{
     width: 60%;
@@ -51,4 +51,33 @@ Button{
 }
 #lookup2{
     background-color:#0a54f5;
+}
+th{
+    text-align: center;
+    border: 1px solid rgb(119, 119, 119);
+    background-color: #056e9ebd;
+    padding: 0.5%;
+
+}
+tr:nth-child(even){
+    background-color: ghostwhite;
+}
+tr:nth-child(odd){
+    background-color: rgb(132, 133, 136);
+}
+td {
+    text-align: left;
+    border: 1px solid lightgray;
+    padding: 0.8%;
+}
+
+tr:hover{
+    background-color:#056e9ebd;
+}
+table{
+    width: 100%;
+}
+#result{
+    display: flex;
+    justify-content: center;
 }
